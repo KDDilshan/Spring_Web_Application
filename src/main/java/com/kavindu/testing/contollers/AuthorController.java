@@ -18,12 +18,12 @@ public class AuthorController {
         this.authorService = authorService;
     }
 
-    @PostMapping
+    @PostMapping(path="/addAuthor")
     public ResponseEntity<AuthorDto> createAuthor(@RequestBody AuthorDto authorDto) {
         return new ResponseEntity<>(authorService.CreateAuthor(authorDto), HttpStatus.CREATED);
     }
 
-    @GetMapping
+    @GetMapping(path = "/getAuthor")
     public ResponseEntity<List<AuthorDto>> getAuthors() {
         return ResponseEntity.ok(authorService.GetAllAuthors());
     }

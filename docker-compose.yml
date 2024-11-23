@@ -8,4 +8,4 @@ services:
     restart: always
     environment:
       POSTGRES_PASSWORD: springpassword
-      POSTGRES_DB: postgres_db
+      POSTGRES_DB: postgres
