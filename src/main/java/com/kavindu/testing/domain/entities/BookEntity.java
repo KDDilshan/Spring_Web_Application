@@ -20,6 +20,9 @@ public class BookEntity {
     private String title;
 
     @ManyToOne
-    @JoinColumn(name="author_id")
+    @JoinColumn(name="author_id",insertable=false,updatable=false)
     private AuthorEntity author;
+
+    @Column(name = "author_id")
+    private Long authorId;
 }

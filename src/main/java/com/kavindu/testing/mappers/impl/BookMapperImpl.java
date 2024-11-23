@@ -4,7 +4,9 @@ import com.kavindu.testing.domain.dto.BookDto;
 import com.kavindu.testing.domain.entities.BookEntity;
 import com.kavindu.testing.mappers.Mapper;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BookMapperImpl implements Mapper<BookEntity, BookDto> {
 
     private ModelMapper modelMapper;
