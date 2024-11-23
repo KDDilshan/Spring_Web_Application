@@ -4,7 +4,9 @@ import com.kavindu.testing.domain.dto.AuthorDto;
 import com.kavindu.testing.domain.entities.AuthorEntity;
 import com.kavindu.testing.mappers.Mapper;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AuthorMapperImpl implements Mapper<AuthorEntity, AuthorDto> {
 
     private ModelMapper modelMapper;
