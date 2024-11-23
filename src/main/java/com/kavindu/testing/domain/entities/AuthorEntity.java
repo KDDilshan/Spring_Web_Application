@@ -19,9 +19,9 @@ public class AuthorEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "author_id_seq")
     private Long id;
 
-    private String Name;
+    private String name;
 
-    private Integer Age;
+    private Integer age;
 
     @OneToMany(mappedBy = "author",cascade = CascadeType.ALL)
     private List<BookEntity> books;
