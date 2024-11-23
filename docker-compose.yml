@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    ports:
+      - "5483:5432"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: springpassword
+      POSTGRES_DB: postgres_db
